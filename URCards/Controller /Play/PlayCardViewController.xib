@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,10 +17,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayCardViewController" customModule="URCards" customModuleProvider="target">
             <connections>
                 <outlet property="allCardLabel" destination="6N9-IL-w9C" id="X6l-6G-XnW"/>
-                <outlet property="buttonFlip" destination="hBl-WZ-jQi" id="2i5-GY-YUM"/>
                 <outlet property="cardView" destination="4M6-o4-028" id="lpf-oA-5zi"/>
                 <outlet property="contentCardLabel" destination="sd9-Yv-8bP" id="isi-8W-hQ4"/>
                 <outlet property="imageCard" destination="5UO-ZU-Wov" id="UBA-BS-kow"/>
+                <outlet property="nameOfSetLabel" destination="qCm-kC-BIt" id="dNt-RG-dtN"/>
                 <outlet property="showedCardLabel" destination="OgE-E6-ayq" id="iNq-Nl-lMM"/>
                 <outlet property="switchOption" destination="B8j-Cu-OFR" id="Vgs-BQ-c9y"/>
                 <outlet property="theme" destination="xuX-8S-nZm" id="nOk-8J-dEf"/>
@@ -31,11 +32,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-8S-nZm">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-8S-nZm">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4M6-o4-028">
-                    <rect key="frame" x="57" y="215" width="300" height="500"/>
+                    <rect key="frame" x="57" y="206.5" width="300" height="500"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="5UO-ZU-Wov">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
@@ -83,61 +84,85 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0R-4u-GcN">
-                    <rect key="frame" x="16" y="104" width="135" height="20.5"/>
+                    <rect key="frame" x="16" y="95.5" width="135" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N9-IL-w9C">
-                    <rect key="frame" x="159" y="104" width="22.5" height="21"/>
+                    <rect key="frame" x="159" y="95.5" width="22.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showed Card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZo-An-fLK">
-                    <rect key="frame" x="16" y="150.5" width="106.5" height="20.5"/>
+                    <rect key="frame" x="16" y="142" width="106.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-MM-WuF">
-                    <rect key="frame" x="290" y="770" width="67" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Tron bai"/>
-                    <connections>
-                        <action selector="mixedCard:" destination="-1" eventType="touchUpInside" id="2m3-BV-yg8"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip showed card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnv-SK-DD8">
-                    <rect key="frame" x="206.5" y="104" width="134.5" height="20.5"/>
+                    <rect key="frame" x="206.5" y="95.5" width="134.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-yK-OHe">
-                    <rect key="frame" x="51" y="770" width="67" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Refresh"/>
-                    <connections>
-                        <action selector="refreshOption:" destination="-1" eventType="touchUpInside" id="RpH-81-xt1"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="yKm-Is-Ji2">
+                    <rect key="frame" x="57" y="736.5" width="300" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-yK-OHe">
+                            <rect key="frame" x="0.0" y="0.0" width="132" height="44"/>
+                            <color key="backgroundColor" red="0.82376930930000003" green="0.82376930930000003" blue="0.82376930930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Refresh">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="refreshOption:" destination="-1" eventType="touchUpInside" id="RpH-81-xt1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-MM-WuF">
+                            <rect key="frame" x="168" y="0.0" width="132" height="44"/>
+                            <color key="backgroundColor" red="0.82376930930000003" green="0.82376930930000003" blue="0.82376930930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Mix">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="mixedCard:" destination="-1" eventType="touchUpInside" id="2m3-BV-yg8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QLT-vf-t3c"/>
+                    </constraints>
+                </stackView>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-Cu-OFR">
-                    <rect key="frame" x="349" y="99" width="51" height="31"/>
+                    <rect key="frame" x="349" y="90.5" width="51" height="31"/>
                     <connections>
                         <action selector="isRemoveShowedCard:" destination="-1" eventType="valueChanged" id="izi-65-UEI"/>
                     </connections>
                 </switch>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgE-E6-ayq">
-                    <rect key="frame" x="130.5" y="150.5" width="22.5" height="21"/>
+                    <rect key="frame" x="130.5" y="142" width="22.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DDang choiw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCm-kC-BIt">
-                    <rect key="frame" x="155.5" y="68" width="103.5" height="20"/>
+                    <rect key="frame" x="155.5" y="60" width="103.5" height="19.5"/>
                     <fontDescription key="fontDescription" name="MilkyNiceClean" family="Milky Nice" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -149,12 +174,13 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B8j-Cu-OFR" secondAttribute="trailing" constant="16" id="0IO-l6-I3U"/>
                 <constraint firstItem="xuX-8S-nZm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Lt-VJ-OVu"/>
                 <constraint firstItem="j0R-4u-GcN" firstAttribute="top" secondItem="qCm-kC-BIt" secondAttribute="bottom" constant="16" id="1it-dY-pDz"/>
+                <constraint firstItem="yKm-Is-Ji2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="7qe-9q-IN9"/>
                 <constraint firstItem="xuX-8S-nZm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BxE-GO-MNa"/>
                 <constraint firstItem="6N9-IL-w9C" firstAttribute="leading" secondItem="j0R-4u-GcN" secondAttribute="trailing" constant="8" id="DxK-hc-ftb"/>
                 <constraint firstItem="Xnv-SK-DD8" firstAttribute="top" secondItem="qCm-kC-BIt" secondAttribute="bottom" constant="16" id="GBj-2I-MsA"/>
                 <constraint firstItem="4M6-o4-028" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LxB-Lj-rwo"/>
                 <constraint firstItem="j0R-4u-GcN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UWM-oO-uDv"/>
-                <constraint firstItem="qCm-kC-BIt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="UbN-Ja-K5J"/>
+                <constraint firstItem="qCm-kC-BIt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="UbN-Ja-K5J"/>
                 <constraint firstItem="Xnv-SK-DD8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6N9-IL-w9C" secondAttribute="trailing" constant="16" id="W7g-dS-VAx"/>
                 <constraint firstItem="6N9-IL-w9C" firstAttribute="centerY" secondItem="j0R-4u-GcN" secondAttribute="centerY" id="aiY-F1-etA"/>
                 <constraint firstItem="OgE-E6-ayq" firstAttribute="centerY" secondItem="sZo-An-fLK" secondAttribute="centerY" id="amD-S2-flQ"/>
@@ -164,8 +190,11 @@
                 <constraint firstItem="sZo-An-fLK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lMW-OQ-dHD"/>
                 <constraint firstAttribute="trailing" secondItem="xuX-8S-nZm" secondAttribute="trailing" id="oP0-hd-IMa"/>
                 <constraint firstAttribute="bottom" secondItem="xuX-8S-nZm" secondAttribute="bottom" id="okl-kp-gDI"/>
+                <constraint firstItem="yKm-Is-Ji2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="svQ-af-0hq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yKm-Is-Ji2" secondAttribute="trailing" constant="57" id="tuH-al-tfT"/>
                 <constraint firstItem="B8j-Cu-OFR" firstAttribute="centerY" secondItem="Xnv-SK-DD8" secondAttribute="centerY" id="v5O-rZ-nOf"/>
                 <constraint firstItem="qCm-kC-BIt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yDQ-nL-q3m"/>
+                <constraint firstItem="yKm-Is-Ji2" firstAttribute="top" secondItem="4M6-o4-028" secondAttribute="bottom" constant="30" id="zJh-E1-dxg"/>
                 <constraint firstItem="sZo-An-fLK" firstAttribute="top" secondItem="j0R-4u-GcN" secondAttribute="bottom" constant="26" id="zmT-ns-8oS"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
@@ -173,5 +202,8 @@
     </objects>
     <resources>
         <image name="back" width="1500" height="2500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

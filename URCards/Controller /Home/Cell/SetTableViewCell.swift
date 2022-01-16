@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 protocol HomeViewDelegate: Any {
     func sendSetName(id: Int, name: String)
@@ -37,6 +38,7 @@ class SetTableViewCell: UITableViewCell {
 
     @IBAction func changeSetName(_ sender: UIButton) {
         textField.isEnabled = true
+        textField.beginFloatingCursor(at: .zero)
     }
 }
 

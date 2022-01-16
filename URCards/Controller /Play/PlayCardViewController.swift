@@ -14,10 +14,10 @@ class PlayCardViewController: UIViewController {
     @IBOutlet weak var showedCardLabel: UILabel!
     @IBOutlet weak var switchOption: UISwitch!
     @IBOutlet weak var imageCard: UIImageView!
-    @IBOutlet weak var buttonFlip: UIButton!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var theme: UIImageView!
     @IBOutlet weak var contentCardLabel: UILabel!
+    @IBOutlet weak var nameOfSetLabel: UILabel!
     
     var isOpen = false
     let realm = try! Realm()
@@ -25,6 +25,7 @@ class PlayCardViewController: UIViewController {
     var showedCard = 0
     var IDSet = 0
     var isRemoveShowedCard = false
+    var setName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +64,7 @@ class PlayCardViewController: UIViewController {
     @objc func showListCard() {
         let vc = ListCardViewController.init(nibName: "ListCardViewController", bundle: nil)
         vc.IDSet = IDSet
-        vc.listCard = listCard
+        vc.listCard = listCard.reversed()
         vc.dismissVC = { [weak self] in
             self?.getListCard()
         }
@@ -75,6 +76,7 @@ class PlayCardViewController: UIViewController {
         allCardLabel.text = "\(self.listCard.count)"
         showedCardLabel.text = "\(self.showedCard)"
         contentCardLabel.isHidden = true
+        nameOfSetLabel.text = "Playing: \(setName)"
     }
 
     @IBAction func refreshOption(_ sender: UIButton) {

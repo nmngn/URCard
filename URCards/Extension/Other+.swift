@@ -54,21 +54,30 @@ extension UIViewController {
         DispatchQueue.main.async {
             self.view.backgroundColor = .clear
             let hour = Calendar.current.component(.hour, from: Date())
-            if hour < 5 {
-                theme.image = UIImage(named: "time1")
-            } else if hour >= 5 && hour < 7 {
-                theme.image = UIImage(named: "time2")
-            } else if hour >= 7 && hour < 9 {
-                theme.image = UIImage(named: "time3")
-            } else if hour >= 9 && hour < 17 {
-                theme.image = UIImage(named: "time4")
-            } else if hour >= 17 && hour < 19 {
-                theme.image = UIImage(named: "time5")
-            } else if hour >= 19 && hour < 23 {
-                theme.image = UIImage(named: "time2")
+            if hour % 4 == 0 {
+                theme.image = UIImage(named: "color1")
+            } else if hour % 4 == 1 {
+                theme.image = UIImage(named: "color2")
+            } else if hour % 4 == 2 {
+                theme.image = UIImage(named: "color3")
             } else {
-                theme.image = UIImage(named: "time1")
+                theme.image = UIImage(named: "color4")
             }
+//            if hour < 5 {
+//                theme.image = UIImage(named: "time1")
+//            } else if hour >= 5 && hour < 7 {
+//                theme.image = UIImage(named: "time2")
+//            } else if hour >= 7 && hour < 9 {
+//                theme.image = UIImage(named: "time3")
+//            } else if hour >= 9 && hour < 17 {
+//                theme.image = UIImage(named: "time4")
+//            } else if hour >= 17 && hour < 19 {
+//                theme.image = UIImage(named: "time5")
+//            } else if hour >= 19 && hour < 23 {
+//                theme.image = UIImage(named: "time2")
+//            } else {
+//                theme.image = UIImage(named: "time1")
+//            }
         }
     }
 }

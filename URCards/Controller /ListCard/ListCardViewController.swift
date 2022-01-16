@@ -11,6 +11,7 @@ import RealmSwift
 class ListCardViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     var IDSet = 0
     let realm = try! Realm()
@@ -20,6 +21,7 @@ class ListCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
+        backgroundImage.applyBlurEffect()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,6 +99,13 @@ class ListCardViewController: UIViewController {
         }
     }
     
+    func removeCard(id: Int) {
+        let card = self.realm.objects(Card.self).filter("IDCard = %d", id)
+        try! self.realm.write({
+            self.realm.delete(card)
+        })
+        getListCard()
+    }
     
 }
 
@@ -114,5 +123,14 @@ extension ListCardViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            removeCard(id: listCard[indexPath.row].IDCard)
+        }
+    }
     
 }

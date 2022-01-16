@@ -11,18 +11,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardContentTableViewCell" rowHeight="62" id="KGk-i7-Jjw" customClass="CardContentTableViewCell" customModule="URCards" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="348" height="62"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardContentTableViewCell" rowHeight="51" id="KGk-i7-Jjw" customClass="CardContentTableViewCell" customModule="URCards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="51"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="348" height="62"/>
+                <rect key="frame" x="0.0" y="0.0" width="322" height="51"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-Bw-3Sn">
-                        <rect key="frame" x="0.0" y="0.0" width="348" height="62"/>
+                        <rect key="frame" x="16" y="8" width="290" height="35"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m1-2K-k3D">
-                                <rect key="frame" x="16" y="12" width="316" height="38"/>
+                                <rect key="frame" x="8" y="8" width="274" height="19"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -32,26 +32,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGg-0t-vQX">
-                                <rect key="frame" x="24" y="61" width="300" height="1"/>
-                                <color key="backgroundColor" red="0.65374047437303329" green="0.9678070983167284" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="v4M-4F-wCW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BGg-0t-vQX" firstAttribute="leading" secondItem="OjI-Bw-3Sn" secondAttribute="leading" constant="24" id="8iU-zr-9dS"/>
-                            <constraint firstAttribute="bottom" secondItem="BGg-0t-vQX" secondAttribute="bottom" id="HEn-gI-qbB"/>
-                            <constraint firstAttribute="bottom" secondItem="7m1-2K-k3D" secondAttribute="bottom" constant="12" id="HWG-0g-Gv9"/>
-                            <constraint firstAttribute="trailing" secondItem="BGg-0t-vQX" secondAttribute="trailing" constant="24" id="eI1-b0-gaB"/>
-                            <constraint firstAttribute="trailing" secondItem="7m1-2K-k3D" secondAttribute="trailing" constant="16" id="kF2-X3-107"/>
-                            <constraint firstItem="7m1-2K-k3D" firstAttribute="top" secondItem="OjI-Bw-3Sn" secondAttribute="top" constant="12" id="sls-6Z-frb"/>
-                            <constraint firstItem="7m1-2K-k3D" firstAttribute="leading" secondItem="OjI-Bw-3Sn" secondAttribute="leading" constant="16" id="zvJ-BY-pRp"/>
+                            <constraint firstAttribute="trailing" secondItem="7m1-2K-k3D" secondAttribute="trailing" constant="8" id="LcV-ne-wN8"/>
+                            <constraint firstItem="7m1-2K-k3D" firstAttribute="top" secondItem="OjI-Bw-3Sn" secondAttribute="top" constant="8" id="Mhl-6k-Zhb"/>
+                            <constraint firstItem="7m1-2K-k3D" firstAttribute="leading" secondItem="OjI-Bw-3Sn" secondAttribute="leading" constant="8" id="bYJ-Kq-OUR"/>
+                            <constraint firstAttribute="bottom" secondItem="7m1-2K-k3D" secondAttribute="bottom" constant="8" id="tVp-61-kQi"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -60,11 +47,12 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="OjI-Bw-3Sn" secondAttribute="bottom" id="4wU-2K-7f7"/>
-                    <constraint firstItem="OjI-Bw-3Sn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cYZ-Qh-RuL"/>
-                    <constraint firstItem="OjI-Bw-3Sn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jlX-z5-jck"/>
-                    <constraint firstAttribute="trailing" secondItem="OjI-Bw-3Sn" secondAttribute="trailing" id="o8t-3f-8E7"/>
+                    <constraint firstItem="OjI-Bw-3Sn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MHg-U9-ElL"/>
+                    <constraint firstItem="OjI-Bw-3Sn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="c5B-zx-wGF"/>
+                    <constraint firstAttribute="bottom" secondItem="OjI-Bw-3Sn" secondAttribute="bottom" constant="8" id="djv-GE-dQN"/>
+                    <constraint firstAttribute="trailing" secondItem="OjI-Bw-3Sn" secondAttribute="trailing" constant="16" id="tmQ-37-Oo8"/>
                 </constraints>
                 <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -73,10 +61,11 @@
                 </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="contentLabel" destination="7m1-2K-k3D" id="dY7-5K-ziU"/>
             </connections>
-            <point key="canvasLocation" x="152.17391304347828" y="69.642857142857139"/>
+            <point key="canvasLocation" x="133.33333333333334" y="64.620535714285708"/>
         </tableViewCell>
     </objects>
     <resources>
