@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16D3938A5BD617C55E347AA1 /* Pods_URCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030C337CD24415830DD08C22 /* Pods_URCards.framework */; };
+		3606A666279314F500320B21 /* CardContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606A664279314F500320B21 /* CardContentTableViewCell.swift */; };
+		3606A667279314F500320B21 /* CardContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3606A665279314F500320B21 /* CardContentTableViewCell.xib */; };
+		361285D427915D1400FA02D9 /* MilkyNice-Clean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A80278FCD32004A44D2 /* MilkyNice-Clean.ttf */; };
+		361285D82791B65000FA02D9 /* ListCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361285D62791B65000FA02D9 /* ListCardViewController.swift */; };
+		361285D92791B65000FA02D9 /* ListCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361285D72791B65000FA02D9 /* ListCardViewController.xib */; };
+		36C95A2A278FB182004A44D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A29278FB182004A44D2 /* Assets.xcassets */; };
+		36C95A2D278FB182004A44D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A2B278FB182004A44D2 /* LaunchScreen.storyboard */; };
+		36C95A38278FB183004A44D2 /* URCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A37278FB183004A44D2 /* URCardsTests.swift */; };
+		36C95A42278FB183004A44D2 /* URCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A41278FB183004A44D2 /* URCardsUITests.swift */; };
+		36C95A44278FB183004A44D2 /* URCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A43278FB183004A44D2 /* URCardsUITestsLaunchTests.swift */; };
+		36C95A67278FB204004A44D2 /* Other+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A51278FB203004A44D2 /* Other+.swift */; };
+		36C95A68278FB204004A44D2 /* Realm+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A52278FB203004A44D2 /* Realm+.swift */; };
+		36C95A69278FB204004A44D2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A53278FB203004A44D2 /* UIView+.swift */; };
+		36C95A6A278FB204004A44D2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A54278FB203004A44D2 /* String+.swift */; };
+		36C95A6B278FB204004A44D2 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A55278FB203004A44D2 /* Date+.swift */; };
+		36C95A6C278FB204004A44D2 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A56278FB203004A44D2 /* UITableView+.swift */; };
+		36C95A6D278FB204004A44D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A58278FB203004A44D2 /* AppDelegate.swift */; };
+		36C95A6E278FB204004A44D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A59278FB203004A44D2 /* SceneDelegate.swift */; };
+		36C95A6F278FB204004A44D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A5C278FB203004A44D2 /* ViewController.swift */; };
+		36C95A70278FB204004A44D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A5D278FB203004A44D2 /* Main.storyboard */; };
+		36C95A71278FB204004A44D2 /* SetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A60278FB203004A44D2 /* SetTableViewCell.xib */; };
+		36C95A72278FB204004A44D2 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A61278FB203004A44D2 /* SetTableViewCell.swift */; };
+		36C95A73278FB204004A44D2 /* PlayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A63278FB203004A44D2 /* PlayCardViewController.swift */; };
+		36C95A74278FB204004A44D2 /* PlayCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A64278FB203004A44D2 /* PlayCardViewController.xib */; };
+		36C95A75278FB204004A44D2 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95A66278FB204004A44D2 /* CardModel.swift */; };
+		36C95A7D278FBD5A004A44D2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A7C278FBD5A004A44D2 /* Color.xcassets */; };
+		36C95A7F278FCB1B004A44D2 /* Chicken Cripsy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36C95A7E278FCB1B004A44D2 /* Chicken Cripsy.ttf */; };
+		F2B7B8744EB7291E185F8370 /* Pods_URCardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E24BA499BBEFD5FD086B4AD /* Pods_URCardsTests.framework */; };
+		FDAE35436849A2B63A4DBE81 /* Pods_URCards_URCardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6C7B7E76031FFF6A0D211E /* Pods_URCards_URCardsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36C95A34278FB183004A44D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36C95A15278FB17D004A44D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C95A1C278FB17D004A44D2;
+			remoteInfo = URCards;
+		};
+		36C95A3E278FB183004A44D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36C95A15278FB17D004A44D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C95A1C278FB17D004A44D2;
+			remoteInfo = URCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030C337CD24415830DD08C22 /* Pods_URCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		191FD994E621502B236C64E0 /* Pods-URCards-URCardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URCards-URCardsUITests.release.xcconfig"; path = "Target Support Files/Pods-URCards-URCardsUITests/Pods-URCards-URCardsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3606A664279314F500320B21 /* CardContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentTableViewCell.swift; sourceTree = "<group>"; };
+		3606A665279314F500320B21 /* CardContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardContentTableViewCell.xib; sourceTree = "<group>"; };
+		361285D62791B65000FA02D9 /* ListCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardViewController.swift; sourceTree = "<group>"; };
+		361285D72791B65000FA02D9 /* ListCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCardViewController.xib; sourceTree = "<group>"; };
+		36C95A1D278FB17D004A44D2 /* URCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C95A29278FB182004A44D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36C95A2C278FB182004A44D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36C95A2E278FB182004A44D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C95A33278FB182004A44D2 /* URCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C95A37278FB183004A44D2 /* URCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URCardsTests.swift; sourceTree = "<group>"; };
+		36C95A3D278FB183004A44D2 /* URCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C95A41278FB183004A44D2 /* URCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URCardsUITests.swift; sourceTree = "<group>"; };
+		36C95A43278FB183004A44D2 /* URCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36C95A51278FB203004A44D2 /* Other+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Other+.swift"; sourceTree = "<group>"; };
+		36C95A52278FB203004A44D2 /* Realm+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+.swift"; sourceTree = "<group>"; };
+		36C95A53278FB203004A44D2 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		36C95A54278FB203004A44D2 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		36C95A55278FB203004A44D2 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		36C95A56278FB203004A44D2 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		36C95A58278FB203004A44D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36C95A59278FB203004A44D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		36C95A5C278FB203004A44D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36C95A5E278FB203004A44D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36C95A60278FB203004A44D2 /* SetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetTableViewCell.xib; sourceTree = "<group>"; };
+		36C95A61278FB203004A44D2 /* SetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
+		36C95A63278FB203004A44D2 /* PlayCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayCardViewController.swift; sourceTree = "<group>"; };
+		36C95A64278FB203004A44D2 /* PlayCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayCardViewController.xib; sourceTree = "<group>"; };
+		36C95A66278FB204004A44D2 /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		36C95A7C278FBD5A004A44D2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		36C95A7E278FCB1B004A44D2 /* Chicken Cripsy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chicken Cripsy.ttf"; sourceTree = "<group>"; };
+		36C95A80278FCD32004A44D2 /* MilkyNice-Clean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MilkyNice-Clean.ttf"; sourceTree = "<group>"; };
+		3B96C66AFFBFFD1F2175D81F /* Pods-URCardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URCardsTests.release.xcconfig"; path = "Target Support Files/Pods-URCardsTests/Pods-URCardsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F10E316275905DB70550FD3 /* Pods-URCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URCards.release.xcconfig"; path = "Target Support Files/Pods-URCards/Pods-URCards.release.xcconfig"; sourceTree = "<group>"; };
+		767DE5ED9B1F0C3AEF81D058 /* Pods-URCards-URCardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URCards-URCardsUITests.debug.xcconfig"; path = "Target Support Files/Pods-URCards-URCardsUITests/Pods-URCards-URCardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D5EEA425F2579DE8760CE15 /* Pods-URCardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URCardsTests.debug.xcconfig"; path = "Target Support Files/Pods-URCardsTests/Pods-URCardsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A51AE0208E297DF81CC5A5 /* Pods-URCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URCards.debug.xcconfig"; path = "Target Support Files/Pods-URCards/Pods-URCards.debug.xcconfig"; sourceTree = "<group>"; };
+		9E24BA499BBEFD5FD086B4AD /* Pods_URCardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URCardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6C7B7E76031FFF6A0D211E /* Pods_URCards_URCardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URCards_URCardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36C95A1A278FB17D004A44D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D3938A5BD617C55E347AA1 /* Pods_URCards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C95A30278FB182004A44D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B7B8744EB7291E185F8370 /* Pods_URCardsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C95A3A278FB183004A44D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAE35436849A2B63A4DBE81 /* Pods_URCards_URCardsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		361285D52791B62E00FA02D9 /* ListCard */ = {
+			isa = PBXGroup;
+			children = (
+				361285DA2791B8EB00FA02D9 /* Cell */,
+				361285D62791B65000FA02D9 /* ListCardViewController.swift */,
+				361285D72791B65000FA02D9 /* ListCardViewController.xib */,
+			);
+			path = ListCard;
+			sourceTree = "<group>";
+		};
+		361285DA2791B8EB00FA02D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3606A664279314F500320B21 /* CardContentTableViewCell.swift */,
+				3606A665279314F500320B21 /* CardContentTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		36C95A14278FB17D004A44D2 = {
+			isa = PBXGroup;
+			children = (
+				36C95A1F278FB17D004A44D2 /* URCards */,
+				36C95A36278FB183004A44D2 /* URCardsTests */,
+				36C95A40278FB183004A44D2 /* URCardsUITests */,
+				36C95A1E278FB17D004A44D2 /* Products */,
+				B86B26D223255B2C54A5B3BA /* Pods */,
+				70B35C2D8880B285E3730D3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36C95A1E278FB17D004A44D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A1D278FB17D004A44D2 /* URCards.app */,
+				36C95A33278FB182004A44D2 /* URCardsTests.xctest */,
+				36C95A3D278FB183004A44D2 /* URCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36C95A1F278FB17D004A44D2 /* URCards */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A57278FB203004A44D2 /* AppDelegate */,
+				36C95A65278FB204004A44D2 /* Model */,
+				36C95A50278FB203004A44D2 /* Extension */,
+				36C95A5A278FB203004A44D2 /* Controller  */,
+				36C95A76278FB2F5004A44D2 /* Utils */,
+				36C95A2E278FB182004A44D2 /* Info.plist */,
+			);
+			path = URCards;
+			sourceTree = "<group>";
+		};
+		36C95A36278FB183004A44D2 /* URCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A37278FB183004A44D2 /* URCardsTests.swift */,
+			);
+			path = URCardsTests;
+			sourceTree = "<group>";
+		};
+		36C95A40278FB183004A44D2 /* URCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A41278FB183004A44D2 /* URCardsUITests.swift */,
+				36C95A43278FB183004A44D2 /* URCardsUITestsLaunchTests.swift */,
+			);
+			path = URCardsUITests;
+			sourceTree = "<group>";
+		};
+		36C95A50278FB203004A44D2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A51278FB203004A44D2 /* Other+.swift */,
+				36C95A52278FB203004A44D2 /* Realm+.swift */,
+				36C95A53278FB203004A44D2 /* UIView+.swift */,
+				36C95A54278FB203004A44D2 /* String+.swift */,
+				36C95A55278FB203004A44D2 /* Date+.swift */,
+				36C95A56278FB203004A44D2 /* UITableView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		36C95A57278FB203004A44D2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A58278FB203004A44D2 /* AppDelegate.swift */,
+				36C95A59278FB203004A44D2 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		36C95A5A278FB203004A44D2 /* Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A5B278FB203004A44D2 /* Home */,
+				36C95A62278FB203004A44D2 /* Play */,
+				361285D52791B62E00FA02D9 /* ListCard */,
+			);
+			path = "Controller ";
+			sourceTree = "<group>";
+		};
+		36C95A5B278FB203004A44D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A5F278FB203004A44D2 /* Cell */,
+				36C95A5C278FB203004A44D2 /* ViewController.swift */,
+				36C95A5D278FB203004A44D2 /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		36C95A5F278FB203004A44D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A60278FB203004A44D2 /* SetTableViewCell.xib */,
+				36C95A61278FB203004A44D2 /* SetTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		36C95A62278FB203004A44D2 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A63278FB203004A44D2 /* PlayCardViewController.swift */,
+				36C95A64278FB203004A44D2 /* PlayCardViewController.xib */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		36C95A65278FB204004A44D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A66278FB204004A44D2 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36C95A76278FB2F5004A44D2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36C95A7E278FCB1B004A44D2 /* Chicken Cripsy.ttf */,
+				36C95A80278FCD32004A44D2 /* MilkyNice-Clean.ttf */,
+				36C95A29278FB182004A44D2 /* Assets.xcassets */,
+				36C95A2B278FB182004A44D2 /* LaunchScreen.storyboard */,
+				36C95A7C278FBD5A004A44D2 /* Color.xcassets */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		70B35C2D8880B285E3730D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				030C337CD24415830DD08C22 /* Pods_URCards.framework */,
+				ED6C7B7E76031FFF6A0D211E /* Pods_URCards_URCardsUITests.framework */,
+				9E24BA499BBEFD5FD086B4AD /* Pods_URCardsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86B26D223255B2C54A5B3BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93A51AE0208E297DF81CC5A5 /* Pods-URCards.debug.xcconfig */,
+				5F10E316275905DB70550FD3 /* Pods-URCards.release.xcconfig */,
+				767DE5ED9B1F0C3AEF81D058 /* Pods-URCards-URCardsUITests.debug.xcconfig */,
+				191FD994E621502B236C64E0 /* Pods-URCards-URCardsUITests.release.xcconfig */,
+				7D5EEA425F2579DE8760CE15 /* Pods-URCardsTests.debug.xcconfig */,
+				3B96C66AFFBFFD1F2175D81F /* Pods-URCardsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36C95A1C278FB17D004A44D2 /* URCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C95A47278FB183004A44D2 /* Build configuration list for PBXNativeTarget "URCards" */;
+			buildPhases = (
+				77CEB7F6A2EFCAF04CF8E4E8 /* [CP] Check Pods Manifest.lock */,
+				36C95A19278FB17D004A44D2 /* Sources */,
+				36C95A1A278FB17D004A44D2 /* Frameworks */,
+				36C95A1B278FB17D004A44D2 /* Resources */,
+				B15610D1FA0176CD0D315796 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URCards;
+			productName = URCards;
+			productReference = 36C95A1D278FB17D004A44D2 /* URCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36C95A32278FB182004A44D2 /* URCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C95A4A278FB183004A44D2 /* Build configuration list for PBXNativeTarget "URCardsTests" */;
+			buildPhases = (
+				716CB0BE0B6702C4C10826D5 /* [CP] Check Pods Manifest.lock */,
+				36C95A2F278FB182004A44D2 /* Sources */,
+				36C95A30278FB182004A44D2 /* Frameworks */,
+				36C95A31278FB182004A44D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36C95A35278FB183004A44D2 /* PBXTargetDependency */,
+			);
+			name = URCardsTests;
+			productName = URCardsTests;
+			productReference = 36C95A33278FB182004A44D2 /* URCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36C95A3C278FB183004A44D2 /* URCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C95A4D278FB183004A44D2 /* Build configuration list for PBXNativeTarget "URCardsUITests" */;
+			buildPhases = (
+				5B498D9B63F937B237DEE313 /* [CP] Check Pods Manifest.lock */,
+				36C95A39278FB183004A44D2 /* Sources */,
+				36C95A3A278FB183004A44D2 /* Frameworks */,
+				36C95A3B278FB183004A44D2 /* Resources */,
+				B383D3020CD48CEB63BEF7C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36C95A3F278FB183004A44D2 /* PBXTargetDependency */,
+			);
+			name = URCardsUITests;
+			productName = URCardsUITests;
+			productReference = 36C95A3D278FB183004A44D2 /* URCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36C95A15278FB17D004A44D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					36C95A1C278FB17D004A44D2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					36C95A32278FB182004A44D2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 36C95A1C278FB17D004A44D2;
+					};
+					36C95A3C278FB183004A44D2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 36C95A1C278FB17D004A44D2;
+					};
+				};
+			};
+			buildConfigurationList = 36C95A18278FB17D004A44D2 /* Build configuration list for PBXProject "URCards" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36C95A14278FB17D004A44D2;
+			productRefGroup = 36C95A1E278FB17D004A44D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36C95A1C278FB17D004A44D2 /* URCards */,
+				36C95A32278FB182004A44D2 /* URCardsTests */,
+				36C95A3C278FB183004A44D2 /* URCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36C95A1B278FB17D004A44D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				361285D427915D1400FA02D9 /* MilkyNice-Clean.ttf in Resources */,
+				3606A667279314F500320B21 /* CardContentTableViewCell.xib in Resources */,
+				36C95A2D278FB182004A44D2 /* LaunchScreen.storyboard in Resources */,
+				361285D92791B65000FA02D9 /* ListCardViewController.xib in Resources */,
+				36C95A2A278FB182004A44D2 /* Assets.xcassets in Resources */,
+				36C95A74278FB204004A44D2 /* PlayCardViewController.xib in Resources */,
+				36C95A7D278FBD5A004A44D2 /* Color.xcassets in Resources */,
+				36C95A70278FB204004A44D2 /* Main.storyboard in Resources */,
+				36C95A7F278FCB1B004A44D2 /* Chicken Cripsy.ttf in Resources */,
+				36C95A71278FB204004A44D2 /* SetTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C95A31278FB182004A44D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C95A3B278FB183004A44D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B498D9B63F937B237DEE313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URCards-URCardsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		716CB0BE0B6702C4C10826D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URCardsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77CEB7F6A2EFCAF04CF8E4E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URCards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15610D1FA0176CD0D315796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-URCards/Pods-URCards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-URCards/Pods-URCards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-URCards/Pods-URCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B383D3020CD48CEB63BEF7C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-URCards-URCardsUITests/Pods-URCards-URCardsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-URCards-URCardsUITests/Pods-URCards-URCardsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-URCards-URCardsUITests/Pods-URCards-URCardsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36C95A19278FB17D004A44D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C95A69278FB204004A44D2 /* UIView+.swift in Sources */,
+				36C95A72278FB204004A44D2 /* SetTableViewCell.swift in Sources */,
+				36C95A67278FB204004A44D2 /* Other+.swift in Sources */,
+				36C95A6C278FB204004A44D2 /* UITableView+.swift in Sources */,
+				36C95A68278FB204004A44D2 /* Realm+.swift in Sources */,
+				36C95A73278FB204004A44D2 /* PlayCardViewController.swift in Sources */,
+				36C95A6F278FB204004A44D2 /* ViewController.swift in Sources */,
+				36C95A6A278FB204004A44D2 /* String+.swift in Sources */,
+				36C95A6E278FB204004A44D2 /* SceneDelegate.swift in Sources */,
+				3606A666279314F500320B21 /* CardContentTableViewCell.swift in Sources */,
+				361285D82791B65000FA02D9 /* ListCardViewController.swift in Sources */,
+				36C95A6D278FB204004A44D2 /* AppDelegate.swift in Sources */,
+				36C95A6B278FB204004A44D2 /* Date+.swift in Sources */,
+				36C95A75278FB204004A44D2 /* CardModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C95A2F278FB182004A44D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C95A38278FB183004A44D2 /* URCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C95A39278FB183004A44D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C95A42278FB183004A44D2 /* URCardsUITests.swift in Sources */,
+				36C95A44278FB183004A44D2 /* URCardsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36C95A35278FB183004A44D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36C95A1C278FB17D004A44D2 /* URCards */;
+			targetProxy = 36C95A34278FB183004A44D2 /* PBXContainerItemProxy */;
+		};
+		36C95A3F278FB183004A44D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36C95A1C278FB17D004A44D2 /* URCards */;
+			targetProxy = 36C95A3E278FB183004A44D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36C95A2B278FB182004A44D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36C95A2C278FB182004A44D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		36C95A5D278FB203004A44D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36C95A5E278FB203004A44D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36C95A45278FB183004A44D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36C95A46278FB183004A44D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36C95A48278FB183004A44D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A51AE0208E297DF81CC5A5 /* Pods-URCards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQK33626M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = URCards/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tui.coding.com.URCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36C95A49278FB183004A44D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F10E316275905DB70550FD3 /* Pods-URCards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQK33626M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = URCards/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tui.coding.com.URCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36C95A4B278FB183004A44D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D5EEA425F2579DE8760CE15 /* Pods-URCardsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQK33626M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tui.coding.com.URCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URCards.app/URCards";
+			};
+			name = Debug;
+		};
+		36C95A4C278FB183004A44D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B96C66AFFBFFD1F2175D81F /* Pods-URCardsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQK33626M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tui.coding.com.URCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URCards.app/URCards";
+			};
+			name = Release;
+		};
+		36C95A4E278FB183004A44D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767DE5ED9B1F0C3AEF81D058 /* Pods-URCards-URCardsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQK33626M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tui.coding.com.URCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = URCards;
+			};
+			name = Debug;
+		};
+		36C95A4F278FB183004A44D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191FD994E621502B236C64E0 /* Pods-URCards-URCardsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQK33626M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tui.coding.com.URCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = URCards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36C95A18278FB17D004A44D2 /* Build configuration list for PBXProject "URCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C95A45278FB183004A44D2 /* Debug */,
+				36C95A46278FB183004A44D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36C95A47278FB183004A44D2 /* Build configuration list for PBXNativeTarget "URCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C95A48278FB183004A44D2 /* Debug */,
+				36C95A49278FB183004A44D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36C95A4A278FB183004A44D2 /* Build configuration list for PBXNativeTarget "URCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C95A4B278FB183004A44D2 /* Debug */,
+				36C95A4C278FB183004A44D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36C95A4D278FB183004A44D2 /* Build configuration list for PBXNativeTarget "URCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C95A4E278FB183004A44D2 /* Debug */,
+				36C95A4F278FB183004A44D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36C95A15278FB17D004A44D2 /* Project object */;
+}

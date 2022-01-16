@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ListCardViewController.saveData(content:):ListCardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " self.listCard?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListCardViewController.tableView(_:numberOfRowsInSection:):ListCardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listCard?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListCardViewController.getListCard():ListCardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "IDSet">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayCardViewController.showListCard():PlayCardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listCard">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListCardViewController.listCard.didset:ListCardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listCard.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
