@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListCardViewController" customModule="URCards" customModuleProvider="target">
             <connections>
+                <outlet property="addCardView" destination="pBH-Sv-fbn" id="tnW-Zf-cJ0"/>
                 <outlet property="backgroundImage" destination="4gX-hq-wl1" id="byZ-Xd-yK1"/>
                 <outlet property="tableView" destination="rkd-NG-Nkg" id="lTw-F2-sGJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,7 +43,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08S-66-mac">
                             <rect key="frame" x="64" y="18.5" width="306" height="19"/>
                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71U-4c-KTJ">

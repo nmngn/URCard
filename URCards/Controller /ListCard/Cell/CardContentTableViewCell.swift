@@ -10,13 +10,15 @@ import UIKit
 class CardContentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var subView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func setupData(data: Card) {
+    func setupData(data: Card, color: UIColor) {
         contentLabel.text = "\(data.IDCard). \(data.content)"
+        contentLabel.textColor = color
     }
     
 }

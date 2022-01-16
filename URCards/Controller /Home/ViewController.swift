@@ -147,12 +147,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PlayCardViewController.init(nibName: "PlayCardViewController", bundle: nil)
         if let list = listSet?[indexPath.row] {
+            let vc = PlayCardViewController.init(nibName: "PlayCardViewController", bundle: nil)
             vc.IDSet = list.IDSet
             vc.setName = list.name
+            navigationController?.pushViewController(vc, animated: true)
         }
-        navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

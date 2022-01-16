@@ -26,14 +26,21 @@ class PlayCardViewController: UIViewController {
     var IDSet = 0
     var isRemoveShowedCard = false
     var setName = ""
+    var contrastColor = UIColor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imageCard.image = UIImage(named: "front")
         self.title = "Play"
         setupNavigationButton()
+        theme.applyBlurEffect()
         changeTheme(theme)
         setupView()
+        if self.traitCollection.userInterfaceStyle == .light {
+            contrastColor = .black
+        } else {
+            contrastColor = UIColor.white.withAlphaComponent(0.8)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

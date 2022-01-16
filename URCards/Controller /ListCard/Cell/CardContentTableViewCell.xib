@@ -64,6 +64,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="contentLabel" destination="7m1-2K-k3D" id="dY7-5K-ziU"/>
+                <outlet property="subView" destination="OjI-Bw-3Sn" id="LJY-N1-oQH"/>
             </connections>
             <point key="canvasLocation" x="133.33333333333334" y="64.620535714285708"/>
         </tableViewCell>

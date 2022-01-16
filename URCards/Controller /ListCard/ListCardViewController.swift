@@ -12,16 +12,23 @@ class ListCardViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var addCardView: UIView!
     
     var IDSet = 0
     let realm = try! Realm()
     var listCard = [Card]()
     var dismissVC: (() -> ())?
+    var contrastColor = UIColor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
         backgroundImage.applyBlurEffect()
+        if self.traitCollection.userInterfaceStyle == .light {
+            contrastColor = .black
+        } else {
+            contrastColor = UIColor.white.withAlphaComponent(0.8)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -119,7 +126,7 @@ extension ListCardViewController: UITableViewDelegate, UITableViewDataSource {
                 CardContentTableViewCell else { return UITableViewCell() }
         cell.selectionStyle = .none
         
-        cell.setupData(data: listCard[indexPath.row])
+        cell.setupData(data: listCard[indexPath.row], color: contrastColor)
         return cell
     }
     
