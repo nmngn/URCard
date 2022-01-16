@@ -78,11 +78,14 @@ class PlayCardViewController: UIViewController {
     }
 
     @IBAction func refreshOption(_ sender: UIButton) {
+        showedCard = 0
         getListCard()
+        view.makeToast("Refreshed")
     }
     
     @IBAction func mixedCard(_ sender: UIButton) {
-        
+        listCard.shuffle()
+        view.makeToast("Mixed")
     }
     
     @IBAction func isRemoveShowedCard(_ sender: UISwitch) {
@@ -97,24 +100,25 @@ class PlayCardViewController: UIViewController {
             }, completion: nil)
             contentCardLabel.isHidden = true
         } else {
-            isOpen = true
-            self.showedCard += 1
-            showedCardLabel.text = "\(self.showedCard)"
-            UIView.transition(with: imageCard, duration: 1, options: .transitionFlipFromRight, animations: {
-                self.imageCard.image = UIImage(named: "back")
-            }, completion: nil)
-            if showedCard < listCard.count {
+            if !listCard.isEmpty {
+                isOpen = true
+                self.showedCard += 1
+                showedCardLabel.text = "\(self.showedCard)"
+                UIView.transition(with: imageCard, duration: 1, options: .transitionFlipFromRight, animations: {
+                    self.imageCard.image = UIImage(named: "back")
+                }, completion: nil)
                 if let card = listCard.randomElement() {
-                    if isRemoveShowedCard {
-                        listCard.removeAll(where: {$0.IDCard == card.IDCard})
-                    }
                     contentCardLabel.text = "It's your turn 🙂\n\n\(card.IDCard). \(card.content)"
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         self.contentCardLabel.isHidden = false
                     }
+                    if isRemoveShowedCard {
+                        listCard.removeAll(where: {$0.IDCard == card.IDCard})
+                    }
                 }
+            } else {
+                view.makeToast("No more card")
             }
-            
         }
     }
     

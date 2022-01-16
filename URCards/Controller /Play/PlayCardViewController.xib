@@ -35,7 +35,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4M6-o4-028">
-                    <rect key="frame" x="57" y="179" width="300" height="500"/>
+                    <rect key="frame" x="57" y="215" width="300" height="500"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="5UO-ZU-Wov">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
@@ -83,19 +83,19 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0R-4u-GcN">
-                    <rect key="frame" x="16" y="68" width="135" height="20.5"/>
+                    <rect key="frame" x="16" y="104" width="135" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N9-IL-w9C">
-                    <rect key="frame" x="159" y="68" width="22.5" height="21"/>
+                    <rect key="frame" x="159" y="104" width="22.5" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showed Card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZo-An-fLK">
-                    <rect key="frame" x="16" y="114.5" width="106.5" height="20.5"/>
+                    <rect key="frame" x="16" y="150.5" width="106.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -110,7 +110,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip showed card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnv-SK-DD8">
-                    <rect key="frame" x="206.5" y="68" width="134.5" height="20.5"/>
+                    <rect key="frame" x="206.5" y="104" width="134.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -125,14 +125,20 @@
                     </connections>
                 </button>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-Cu-OFR">
-                    <rect key="frame" x="349" y="63" width="51" height="31"/>
+                    <rect key="frame" x="349" y="99" width="51" height="31"/>
                     <connections>
                         <action selector="isRemoveShowedCard:" destination="-1" eventType="valueChanged" id="izi-65-UEI"/>
                     </connections>
                 </switch>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgE-E6-ayq">
-                    <rect key="frame" x="130.5" y="114.5" width="22.5" height="21"/>
+                    <rect key="frame" x="130.5" y="150.5" width="22.5" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DDang choiw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCm-kC-BIt">
+                    <rect key="frame" x="155.5" y="68" width="103.5" height="20"/>
+                    <fontDescription key="fontDescription" name="MilkyNiceClean" family="Milky Nice" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -142,22 +148,24 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B8j-Cu-OFR" secondAttribute="trailing" constant="16" id="0IO-l6-I3U"/>
                 <constraint firstItem="xuX-8S-nZm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Lt-VJ-OVu"/>
+                <constraint firstItem="j0R-4u-GcN" firstAttribute="top" secondItem="qCm-kC-BIt" secondAttribute="bottom" constant="16" id="1it-dY-pDz"/>
                 <constraint firstItem="xuX-8S-nZm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BxE-GO-MNa"/>
                 <constraint firstItem="6N9-IL-w9C" firstAttribute="leading" secondItem="j0R-4u-GcN" secondAttribute="trailing" constant="8" id="DxK-hc-ftb"/>
+                <constraint firstItem="Xnv-SK-DD8" firstAttribute="top" secondItem="qCm-kC-BIt" secondAttribute="bottom" constant="16" id="GBj-2I-MsA"/>
                 <constraint firstItem="4M6-o4-028" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LxB-Lj-rwo"/>
                 <constraint firstItem="j0R-4u-GcN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UWM-oO-uDv"/>
+                <constraint firstItem="qCm-kC-BIt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="UbN-Ja-K5J"/>
                 <constraint firstItem="Xnv-SK-DD8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6N9-IL-w9C" secondAttribute="trailing" constant="16" id="W7g-dS-VAx"/>
                 <constraint firstItem="6N9-IL-w9C" firstAttribute="centerY" secondItem="j0R-4u-GcN" secondAttribute="centerY" id="aiY-F1-etA"/>
                 <constraint firstItem="OgE-E6-ayq" firstAttribute="centerY" secondItem="sZo-An-fLK" secondAttribute="centerY" id="amD-S2-flQ"/>
                 <constraint firstItem="OgE-E6-ayq" firstAttribute="leading" secondItem="sZo-An-fLK" secondAttribute="trailing" constant="8" id="ekh-Dk-Fq2"/>
                 <constraint firstItem="B8j-Cu-OFR" firstAttribute="leading" secondItem="Xnv-SK-DD8" secondAttribute="trailing" constant="8" id="gjz-oe-0wn"/>
-                <constraint firstItem="j0R-4u-GcN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="hlv-TU-Iln"/>
                 <constraint firstItem="4M6-o4-028" firstAttribute="top" secondItem="sZo-An-fLK" secondAttribute="bottom" constant="44" id="j3R-6O-eak"/>
                 <constraint firstItem="sZo-An-fLK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lMW-OQ-dHD"/>
-                <constraint firstItem="Xnv-SK-DD8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="lNw-Ne-AkO"/>
                 <constraint firstAttribute="trailing" secondItem="xuX-8S-nZm" secondAttribute="trailing" id="oP0-hd-IMa"/>
                 <constraint firstAttribute="bottom" secondItem="xuX-8S-nZm" secondAttribute="bottom" id="okl-kp-gDI"/>
                 <constraint firstItem="B8j-Cu-OFR" firstAttribute="centerY" secondItem="Xnv-SK-DD8" secondAttribute="centerY" id="v5O-rZ-nOf"/>
+                <constraint firstItem="qCm-kC-BIt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yDQ-nL-q3m"/>
                 <constraint firstItem="sZo-An-fLK" firstAttribute="top" secondItem="j0R-4u-GcN" secondAttribute="bottom" constant="26" id="zmT-ns-8oS"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
