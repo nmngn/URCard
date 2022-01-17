@@ -110,10 +110,20 @@ class ListCardViewController: UIViewController {
         let card = self.realm.objects(Card.self).filter("IDCard = %d", id)
         try! self.realm.write({
             self.realm.delete(card)
+            self.view.makeToast("Xóa thành công")
         })
         getListCard()
+        updateID(id)
     }
     
+    func updateID(_ id: Int) {
+        let list = self.realm.objects(Card.self).filter({$0.IDCard > id})
+        for item in list {
+            try! self.realm.write({
+                item.IDCard -= 1
+            })
+        }
+    }
 }
 
 extension ListCardViewController: UITableViewDelegate, UITableViewDataSource {

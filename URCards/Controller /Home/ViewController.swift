@@ -128,6 +128,16 @@ class ViewController: UIViewController {
             self.realm.delete(card)
         })
         getListSet()
+        updateID(ID)
+    }
+    
+    func updateID(_ id: Int) {
+        let list = self.realm.objects(SetCard.self).filter({$0.IDSet > id})
+        for item in list {
+            try! self.realm.write({
+                item.IDSet -= 1
+            })
+        }
     }
 }
 
