@@ -64,7 +64,7 @@
 		361285D62791B65000FA02D9 /* ListCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardViewController.swift; sourceTree = "<group>"; };
 		361285D72791B65000FA02D9 /* ListCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCardViewController.xib; sourceTree = "<group>"; };
 		36C95A1D278FB17D004A44D2 /* URCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C95A29278FB182004A44D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = URCards/Utils/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		36C95A29278FB182004A44D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36C95A2C278FB182004A44D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36C95A2E278FB182004A44D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C95A33278FB182004A44D2 /* URCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -738,7 +738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3JQK33626M;
@@ -769,7 +769,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3JQK33626M;

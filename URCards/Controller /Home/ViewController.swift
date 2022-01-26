@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Home"
         configView()
-        getListSet()
         changeTheme(theme)
         if self.traitCollection.userInterfaceStyle == .light {
             contrastColor = .black
@@ -127,8 +126,8 @@ class ViewController: UIViewController {
             self.realm.delete(set)
             self.realm.delete(card)
         })
-        getListSet()
         updateID(ID)
+        getListSet()
     }
     
     func updateID(_ id: Int) {

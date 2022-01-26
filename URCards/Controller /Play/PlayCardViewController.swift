@@ -28,14 +28,17 @@ class PlayCardViewController: UIViewController {
     var setName = ""
     var contrastColor = UIColor()
     
+    override func loadView() {
+        super.loadView()
+        changeTheme(theme)
+        theme.applyBlurEffect()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageCard.image = UIImage(named: "front")
         self.title = "Play"
         setupNavigationButton()
-        theme.applyBlurEffect()
-        changeTheme(theme)
-        setupView()
+
         if self.traitCollection.userInterfaceStyle == .light {
             contrastColor = .black
         } else {
@@ -79,6 +82,7 @@ class PlayCardViewController: UIViewController {
     }
     
     func setupView() {
+        imageCard.image = UIImage(named: "front")
         switchOption.isOn = false
         allCardLabel.text = "\(self.listCard.count)"
         showedCardLabel.text = "\(self.showedCard)"

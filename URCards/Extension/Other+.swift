@@ -52,7 +52,6 @@ extension UIViewController {
     
     func changeTheme(_ theme: UIImageView) {
         DispatchQueue.main.async {
-            self.view.backgroundColor = .clear
             let hour = Calendar.current.component(.hour, from: Date())
             if hour % 4 == 0 {
                 theme.image = UIImage(named: "color1")
